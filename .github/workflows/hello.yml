@@ -1,0 +1,9 @@
+name: Hello
+
+on: [push]   # 配列で書けばこれもOK
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "Hello, world!"
